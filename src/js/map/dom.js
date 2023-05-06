@@ -20,8 +20,9 @@ export function initDom() {
   root.insertAdjacentHTML('beforeend', rulerHtml)
   if (isMobile()) {
     document.querySelector('.map__ruler').style.display = 'none'
+    document.querySelector('.map-frame__item').style.display = 'none'
+    document.querySelectorAll('.map-frame__item').forEach(el => {
+      el.addEventListener('dragstart', e => e.preventDefault())
+    })
   }
-  // document.querySelectorAll('.map-frame__item').forEach(el => {
-  //   el.addEventListener('dragstart', e => e.preventDefault())
-  // })
 }
