@@ -3,7 +3,7 @@ import { resolve } from 'path'
 import viteImagemin from 'vite-plugin-imagemin'
 
 export default defineConfig({
-  base: './',
+  base: '/act-map/',
   resolve: {
     alias: {
       '@': `${resolve(__dirname, 'src')}`
