@@ -20,8 +20,8 @@ jobs:
       - name: Deploy # 将打包内容发布到 github page
         uses: JamesIves/github-pages-deploy-action@v4.3.3
         with:  # 自定义环境变量
-          BRANCH: main//这个是存放打包后的分支
-          FOLDER: dist//默认vue项目打包输出目录是dist, 自行修改
+          BRANCH: main #这个是存放打包后的分支
+          FOLDER: dist #默认vue项目打包输出目录是dist, 自行修改
           REPOSITORY_NAME: zkr-1211/act-map # 这是我的 github page 仓库
           TARGET_FOLDER: / # 打包的文件将放到静态服务器 / 目录下
           # ACCESS_TOKEN: ${{ secrets.VUE2_H5 }} # secrets.VUE2_PC 是我的 secret 名称，需要替换成你的,这一行不要也可以
